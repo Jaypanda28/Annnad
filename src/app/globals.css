@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #12304A;
+  --color-navy-dark: #0A1C2C;
+  --color-navy-light: #1D4366;
+  --color-navy-muted: #274D70;
+  
+  --color-medical: #1769D2;
+  --color-medical-hover: #1355AA;
+  --color-medical-light: #EDF4FC;
+  --color-medical-subtle: #F3F8FD;
+
+  --color-teal: #168C91;
+  --color-teal-dark: #106D71;
+  --color-teal-light: #EEF8F8;
+  --color-teal-subtle: #F3FAFA;
+
+  --color-warm-white: #FFFDF9;
+  --color-light-bg: #F5F8FA;
+  --color-light-surface: #FFFFFF;
+  --color-warm-card: #FAF8F5;
+
+  --color-charcoal: #263746;
+  --color-charcoal-muted: #566878;
+  --color-charcoal-light: #7E90A0;
+
+  --color-border-subtle: #E2E8F0;
+  --color-border-warm: #EBE5DC;
+
+  --font-manrope: var(--font-manrope);
+  --font-inter: var(--font-inter);
+}
+
+:root {
+  --bg-primary: #FFFDF9;
+  --bg-secondary: #F5F8FA;
+  --text-main: #263746;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background-color: #FFFDF9;
+  color: #263746;
+  font-family: var(--font-manrope), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Subtle, dignified healthcare shadows */
+.shadow-editorial {
+  box-shadow: 0 1px 3px rgba(18, 48, 74, 0.04), 0 4px 14px rgba(18, 48, 74, 0.03);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 4px 12px rgba(18, 48, 74, 0.06), 0 12px 28px rgba(18, 48, 74, 0.04);
+}
+
+/* Fine hairline borders */
+.border-fine {
+  border-width: 1px;
+  border-color: #E2E8F0;
+}
+
+.border-warm {
+  border-width: 1px;
+  border-color: #EAE5DE;
+}
+
+/* Accessible focus ring */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid #1769D2;
+  outline-offset: 2px;
+}
+
+/* Subtle editorial quote border */
+.quote-line {
+  border-left: 3px solid #168C91;
+}
